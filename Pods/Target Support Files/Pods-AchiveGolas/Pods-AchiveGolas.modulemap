@@ -1,0 +1,6 @@
+framework module Pods_AchiveGolas {
+  umbrella header "Pods-AchiveGolas-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewViewController" customModule="AchiveGolas" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="g4x-V6-g54" id="1Bf-cW-CVG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ROj-fy-xWo">
+                    <rect key="frame" x="10" y="69" width="373" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                        <segment title="Third"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentBtn:" destination="-1" eventType="valueChanged" id="ow3-II-V7r"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4x-V6-g54">
+                    <rect key="frame" x="10" y="110" width="373" height="698"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="g4x-V6-g54" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="9Ia-Zk-NqP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ROj-fy-xWo" secondAttribute="trailing" constant="10" id="Cbf-Xi-Suu"/>
+                <constraint firstItem="ROj-fy-xWo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Ius-dP-5Gb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="g4x-V6-g54" secondAttribute="bottom" constant="10" id="McY-zq-WK1"/>
+                <constraint firstItem="ROj-fy-xWo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="PE2-cU-CJK"/>
+                <constraint firstItem="g4x-V6-g54" firstAttribute="top" secondItem="ROj-fy-xWo" secondAttribute="bottom" constant="10" id="PNs-yv-hc8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g4x-V6-g54" secondAttribute="trailing" constant="10" id="aO2-7e-SpB"/>
+            </constraints>
+            <point key="canvasLocation" x="-42" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
